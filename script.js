@@ -28,5 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     displayLyrics();
-});
 
+    // Ensure music plays when the user interacts with the page
+    const bgMusic = document.getElementById("bg-music");
+    document.body.addEventListener("click", () => {
+        bgMusic.play();
+    });
+});
