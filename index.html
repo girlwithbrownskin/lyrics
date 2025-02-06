@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background GIF -->
-    <div class="background"></div>
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline id="bg-video">
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-couple-kissing-passionately-469-large.mp4" type="video/mp4">
+    </video>
 
     <!-- Lyrics Container -->
     <div class="text">
         <h1 id="lyrics"></h1>
     </div>
 
-    <!-- JavaScript File -->
+    <!-- Background Music (Auto Plays Softly) -->
+    <audio id="bg-music" autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- JavaScript -->
     <script src="script.js" defer></script>
 </body>
 </html>
