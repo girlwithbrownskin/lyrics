@@ -1,25 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Poppins');
 
 body {
-    background-color: black;
-    background-size: cover;
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
+/* Background GIF */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.tenor.com/-UWqS7hHhTYAAAAC/kissing.gif') no-repeat center center/cover;
+    filter: brightness(70%); /* Dim background for better text visibility */
+    z-index: -1;
+}
+
+/* Lyrics Styling */
 .text h1 {
-    margin: -10%;
-    font-size: clamp(40px, 60vw, 60px);
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
+    font-size: clamp(40px, 5vw, 60px);
     color: white;
-    
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
